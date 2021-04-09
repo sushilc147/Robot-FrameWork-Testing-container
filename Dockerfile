@@ -4,7 +4,6 @@ USER root
 RUN apt-get -y update && \
     install ca-certificates \
     curl \
-    gnupg2 && \
     curl -fsSL https://download.docker.com/linux/$(. /etc/os-release) 
 RUN apt-get -y update && apt-get install -y python \
     && apt-get clean 
