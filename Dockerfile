@@ -7,7 +7,7 @@ yum -y install apt-transport-https \
     curl \
     gnupg2 \
     software-properties-common && \
-curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; 
+curl -fsSL https://download.docker.com/linux/$(. /etc/os-release) 
 RUN yum update && apt-get install --no-install-recommends -y python \
  && yum clean all 
 RUN yum install -y docker-ce
